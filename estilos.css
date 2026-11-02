@@ -1,0 +1,179 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f2eb;
+    color: #292720;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 8%;
+    border-bottom: 1px solid #dedbd3;
+}
+
+.logo {
+    font-size: 19px;
+    font-weight: bold;
+    color: #292720;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #292720;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #9a7854;
+}
+
+.inicio {
+    min-height: 520px;
+    padding: 130px 10%;
+}
+
+.subtitulo {
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.inicio h1 {
+    font-family: Georgia, serif;
+    font-size: 65px;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+.descripcion {
+    margin-top: 25px;
+    line-height: 1.7;
+    max-width: 420px;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 25px;
+    background: #292720;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.sobre-mi, .proyectos {
+    padding: 80px 10%;
+}
+
+.sobre-mi h2, .proyectos h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.sobre-mi p {
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.galeria h3 {
+    margin-top: 15px;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.galeria p {
+    margin-top: 8px;
+    color: #777;
+    font-size: 14px;
+}
+
+footer {
+    background: #292720;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+    line-height: 2;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .inicio h1 {
+        font-size: 43px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.intro {
+    margin-bottom: 35px;
+    color: #777;
+}
+
+.mosaico {
+    columns: 3;
+    column-gap: 18px;
+}
+
+.mosaico img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 18px;
+    break-inside: avoid;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.mosaico img:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 700px) {
+    .mosaico {
+        columns: 2;
+    }
+}
+
